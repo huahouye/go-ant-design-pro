@@ -1,5 +1,5 @@
 
-## environment
+## 环境
 
 ```
 go >= 1.16
@@ -9,50 +9,50 @@ yarn >=1.22.0
 npx >= 6.14.4
 ```
 
-## create webui
+## 创建 webui
 
 ```
-## speed up js package download for people who is live in mainland China
+## 修改配置，加速下载速度
 npm config get registry
 npm config set registry https://registry.npm.taobao.org/
-## rollback
+## 还原
 npm config set registry https://registry.npmjs.org/
 
 yarn config get registry
 yarn config set registry https://registry.npm.taobao.org
-## rollback
+## 还原
 yarn config set registry https://registry.yarnpkg.com
 
 npx create-umi ./webui
 '''
-chose ant-design-pro
-chose Pro V4
-chose TypeScript
-chose complete
+选择 ant-design-pro
+选择 Pro V4
+选择 TypeScript
+选择 complete
 '''
 
 cd webui && yarn install
 
 yarn start
 
-## open http://localhost:8000
+## 浏览器打开 http://localhost:8000
 
-## if you want to enable and develop webui under debug mode for convenient, install @umijs/preset-ui and restart webui, there will be a bubble at the bottom right of the page.
+// 打开开发模式下页面右下角的小气泡，方便添加区块和模版等 pro 资产
 
 yarn add @umijs/preset-ui -D
 yarn start
 
-## build for release
+## 构建 release 版本
 yarn build
 ```
 
-## create and run GO server
+## 创建运行 GO 服务
 
 ```
 go mod init go-ant-design-pro
 
-## run
+## 运行
 go run main.go
 
-## open http://localhost:8080 it will open webui by default
+## 打开 http://localhost:8080 默认就会展示 webui（ant-design-pro）页面，注意不是上面的 8000 端口。
 ```
