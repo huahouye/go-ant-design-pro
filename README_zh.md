@@ -49,9 +49,12 @@ yarn build
 ## 创建运行 GO 服务
 
 ```
+## 设置 golang proxy 代理
+go env -w GOPROXY=https://goproxy.cn,direct
+
 go mod init go-ant-design-pro
 
-## 运行
+## 运行，注意：运行 go 程序之前要先编译 webui
 go run main.go
 
 ## 打开 http://localhost:8080 默认就会展示 webui（ant-design-pro）页面，注意不是上面的 8000 端口。

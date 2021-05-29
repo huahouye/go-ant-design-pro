@@ -12,7 +12,7 @@ npx >= 6.14.4
 ## create webui
 
 ```
-## speed up js package download for people who is live in mainland China
+## speed up js package download for people who is living in mainland China
 npm config get registry
 npm config set registry https://registry.npm.taobao.org/
 ## rollback
@@ -49,9 +49,12 @@ yarn build
 ## create and run GO server
 
 ```
+## for people who is living in mainland China
+go env -w GOPROXY=https://goproxy.cn,direct
+
 go mod init go-ant-design-pro
 
-## run
+## run, NOTE: before run go server you should build webui firdt.
 go run main.go
 
 ## open http://localhost:8080 it will open webui by default
