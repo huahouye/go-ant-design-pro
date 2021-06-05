@@ -315,6 +315,23 @@ export default defineConfig({
               ],
             },
             {
+              name: 'toolkit',
+              icon: 'highlight',
+              path: '/toolkit',
+              routes: [
+                {
+                  path: '/',
+                  redirect: '/toolkit/PasswordStrengthMeter',
+                },
+                {
+                  name: 'PasswordStrengthMeter',
+                  icon: 'smile',
+                  path: '/toolkit/PasswordStrengthMeter',
+                  component: './toolkit/PasswordStrengthMeter',
+                },
+              ],
+            },
+            {
               component: '404',
             },
           ],

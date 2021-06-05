@@ -1,6 +1,7 @@
 ## 
 log/**
 go-ant-design-pro
+node_modules
 
 # Binaries for programs and plugins
 *.exe
