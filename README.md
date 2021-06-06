@@ -46,6 +46,15 @@ yarn start
 yarn build
 ```
 
+**Issues**:
+
+If you have any issues, try :
+
+```
+rm -fr src/.umi
+BABEL_CACHE=none yarn start
+```
+
 ## create and run GO server
 
 ```

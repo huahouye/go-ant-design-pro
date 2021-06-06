@@ -46,6 +46,15 @@ yarn start
 yarn build
 ```
 
+**遇到问题**:
+
+如果有遇到使用问题，可以尝试:
+
+```
+rm -fr src/.umi
+BABEL_CACHE=none yarn start
+```
+
 ## 创建运行 GO 服务
 
 ```
