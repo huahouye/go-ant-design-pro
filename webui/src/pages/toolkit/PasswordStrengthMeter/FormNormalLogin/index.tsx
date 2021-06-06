@@ -81,8 +81,8 @@ const NormalLoginForm = () => {
           placeholder="Password"
           onChange={(e) => setPassword(e.target.value)}
         />
-        <PasswordStrengthMeter password={password}/>
       </Form.Item>
+      <PasswordStrengthMeter password={password}/>
       <Form.Item>
         <Form.Item name="remember" valuePropName="checked" noStyle>
           <Checkbox>Remember me</Checkbox>
